@@ -1,0 +1,39 @@
+/* Layout */
+.networking { display: grid; grid-template-columns: 260px 1fr; gap: 16px; }
+.rail { border: 1px solid #ddd; border-radius: 8px; padding: 8px; height: fit-content; position: sticky; top: 12px; }
+.main { position: relative; padding-bottom: 64px; }
+
+/* Left rail */
+.rail-item { display: block; width: 100%; text-align: left; padding: 10px 12px; border: 1px solid transparent; border-radius: 6px; background: transparent; cursor: pointer; }
+.rail-item + .rail-item { margin-top: 4px; }
+.rail-item.active { background: #f6f9ff; border-color: #dde7ff; }
+.rail-title { font-weight: 600; }
+.rail-sub { color: #6b7280; font-size: 12px; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 999px; margin-left: 6px; vertical-align: middle; }
+
+/* Forms */
+.row { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+.row > label { width: 140px; color: #374151; }
+.row > input, .row > select { flex: 1; padding: 6px 8px; border: 1px solid #d1d5db; border-radius: 6px; }
+.grid { display: grid; grid-template-columns: 1fr; gap: 6px; }
+.adv { margin-top: 8px; }
+.hint { color: #6b7280; font-size: 12px; }
+
+.card { border: 1px solid #e5e7eb; background: #fff; border-radius: 8px; padding: 10px; margin-top: 8px; }
+.samples { margin-top: 6px; }
+.ports { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.port-pill { border: 1px solid #e5e7eb; border-radius: 999px; padding: 4px 8px; background: #f9fafb; }
+
+/* Table-like list */
+.table { border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+.line { display: grid; grid-template-columns: 1.6fr 0.6fr 0.6fr 1fr; align-items: center; padding: 8px 10px; border-bottom: 1px solid #f3f4f6; }
+.line:last-child { border-bottom: none; }
+.line.sel { background: #f8fafc; }
+.cell { padding: 2px 4px; }
+.cell.name { display: flex; align-items: center; gap: 6px; }
+.cell.act { display: flex; gap: 6px; justify-content: flex-end; }
+
+/* Gate banner */
+.gate { position: sticky; bottom: 0; left: 0; right: 0; background: #ffffff; border-top: 1px solid #e5e7eb; padding: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 16px; }
+.checks { display: flex; gap: 18px; color: #374151; }
+

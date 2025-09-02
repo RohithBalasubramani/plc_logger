@@ -1,0 +1,9 @@
+{
+  "name": "LTPanel",
+  "fields": [
+    { "key": "r_current", "type": "float", "unit": "A", "scale": 1 },
+    { "key": "y_current", "type": "float", "unit": "A", "scale": 1 },
+    { "key": "voltage", "type": "float", "unit": "V", "scale": 1 }
+  ]
+}
+

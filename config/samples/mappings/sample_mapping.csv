@@ -1,0 +1,5 @@
+field,protocol,address,data_type,scale,deadband,poll_ms
+r_current,modbus,40001,float,1,0,1000
+y_current,modbus,40002,float,1,0,1000
+voltage,opc_ua,ns=2;i=10853,float,1,0.5,500
+

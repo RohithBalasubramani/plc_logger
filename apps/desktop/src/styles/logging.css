@@ -1,0 +1,31 @@
+/* Layout */
+.logging .layout { display: grid; grid-template-columns: 260px 1fr; gap: 16px; }
+.logging .rail { border: 1px solid #ddd; border-radius: 8px; padding: 8px; height: fit-content; position: sticky; top: 12px; }
+.logging .rail-item { display: block; width: 100%; text-align: left; padding: 10px 12px; border: 1px solid transparent; border-radius: 6px; background: transparent; cursor: pointer; }
+.logging .rail-item + .rail-item { margin-top: 4px; }
+.logging .rail-item.active { background: #f6f9ff; border-color: #dde7ff; }
+.logging .rail-title { font-weight: 600; }
+.logging .rail-sub { color: #6b7280; font-size: 12px; }
+.logging .dot { display: inline-block; width: 10px; height: 10px; border-radius: 999px; margin-left: 6px; vertical-align: middle; }
+
+.logging .main { position: relative; padding-bottom: 64px; }
+.logging .row { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+.logging .row > label { width: 160px; color: #374151; }
+.logging .row > input, .logging .row > select { flex: 1; padding: 6px 8px; border: 1px solid #d1d5db; border-radius: 6px; }
+.logging .card { border: 1px solid #e5e7eb; background: #fff; border-radius: 8px; padding: 10px; margin-top: 8px; }
+
+.logging .table { border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+.logging .line { display: grid; grid-template-columns: 1.2fr .7fr .7fr .7fr .7fr .8fr .8fr .8fr .5fr 1fr; align-items: center; padding: 8px 10px; border-bottom: 1px solid #f3f4f6; }
+.logging .line.head { font-weight: 600; background: #f8fafc; }
+.logging .line.sel { background: #f8fafc; }
+.logging .empty { padding: 10px; color: #6b7280; }
+.logging .cell.act { display: flex; gap: 6px; justify-content: flex-end; }
+.logging .metrics { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 6px; }
+
+.logging .bar { position: relative; flex: 1; height: 10px; background: #f3f4f6; border-radius: 999px; overflow: hidden; }
+.logging .bar.small { height: 8px; }
+.logging .bar-fill { position: absolute; left: 0; top: 0; bottom: 0; background: #7aa2ff; }
+
+.logging .gate { position: sticky; bottom: 0; left: 0; right: 0; background: #ffffff; border-top: 1px solid #e5e7eb; padding: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 16px; }
+.logging .checks { display: flex; gap: 18px; color: #374151; }
+

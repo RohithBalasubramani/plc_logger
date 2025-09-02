@@ -1,0 +1,8 @@
+{
+  "name": "HTPanel",
+  "fields": [
+    { "key": "primary_voltage", "type": "float", "unit": "kV", "scale": 1 },
+    { "key": "secondary_voltage", "type": "float", "unit": "V", "scale": 1 }
+  ]
+}
+

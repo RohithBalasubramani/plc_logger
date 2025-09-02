@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "PLC Logger",
+  "identifier": "com.example.plclogger",
+  "version": "0.1.0",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "dist",
+    "devUrl": "http://localhost:5173"
+  },
+  "app": {
+    "windows": [
+      { "title": "PLC Logger", "width": 1280, "height": 800 }
+    ]
+  }
+}
+

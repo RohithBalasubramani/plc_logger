@@ -1,0 +1,8 @@
+{
+  "name": "Inverter",
+  "fields": [
+    { "key": "dc_voltage", "type": "float", "unit": "V", "scale": 1 },
+    { "key": "ac_power", "type": "float", "unit": "kW", "scale": 1 }
+  ]
+}
+

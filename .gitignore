@@ -1,0 +1,82 @@
+# ---- OS / Editor noise ----
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.iml
+
+# ---- Logs ----
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---- Env files ----
+.env
+.env.*
+!.env.example
+!agent/.env.example
+!apps/desktop/.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+.installed.cfg
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+.cache/
+
+# ---- Node / Vite ----
+node_modules/
+.npm/
+.pnpm-store/
+.eslintcache
+.stylelintcache
+.turbo/
+coverage/
+dist/
+build/
+.parcel-cache/
+
+# App-specific (Desktop)
+apps/desktop/node_modules/
+apps/desktop/dist/
+apps/desktop/coverage/
+apps/desktop/.vite/
+apps/desktop/.vercel/
+
+# ---- Tauri / Rust (binary output) ----
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/.cargo/
+*.pdb
+# Note: keep Cargo.lock tracked for binary projects
+
+# ---- Misc ----
+tmp/
+temp/
+~$*

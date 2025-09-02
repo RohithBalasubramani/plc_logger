@@ -1,0 +1,52 @@
+/* Simple tabbed navigation styles */
+.tabs {
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+  border-bottom: 1px solid #ddd;
+  margin: 12px 0;
+}
+
+.tab {
+  appearance: none;
+  -webkit-appearance: none;
+  background: #f7f9fc;
+  color: #333;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  padding: 8px 12px;
+  margin-right: 4px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background: #eef3ff;
+}
+
+.tab.active {
+  background: #fff;
+  color: #2d6cdf;
+  border-color: #cfd7e6;
+  font-weight: 600;
+}
+
+.tab:disabled,
+.tab.disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.tab:focus {
+  outline: 2px solid rgba(45,108,223,0.35);
+  outline-offset: 2px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0 8px 8px 8px;
+  padding: 16px;
+}

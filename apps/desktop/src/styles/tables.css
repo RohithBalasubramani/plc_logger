@@ -1,0 +1,37 @@
+/* Top bar */
+.tables .topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.tables .topbar .db { color: #374151; }
+
+/* Layout */
+.tables .layout { display: grid; grid-template-columns: 260px 1fr; gap: 16px; }
+.tables .rail { border: 1px solid #ddd; border-radius: 8px; padding: 8px; height: fit-content; position: sticky; top: 12px; }
+.tables .rail-item { display: block; width: 100%; text-align: left; padding: 10px 12px; border: 1px solid transparent; border-radius: 6px; background: transparent; cursor: pointer; }
+.tables .rail-item + .rail-item { margin-top: 4px; }
+.tables .rail-item.active { background: #f6f9ff; border-color: #dde7ff; }
+.tables .rail-title { font-weight: 600; }
+.tables .rail-sub { color: #6b7280; font-size: 12px; }
+.tables .dot { display: inline-block; width: 10px; height: 10px; border-radius: 999px; margin-left: 6px; vertical-align: middle; }
+
+/* Content */
+.tables .main { position: relative; padding-bottom: 64px; }
+.tables .row { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+.tables .row > label { width: 160px; color: #374151; }
+.tables .row > input, .tables .row > select { flex: 1; padding: 6px 8px; border: 1px solid #d1d5db; border-radius: 6px; }
+.tables .grid { display: grid; gap: 6px; align-items: center; }
+.tables .grid.col-6 { grid-template-columns: 1.2fr 0.7fr 0.7fr 0.5fr 1.2fr 90px; }
+.tables .grid.col-7 { grid-template-columns: 1fr 0.6fr 0.9fr 1.2fr 0.8fr 0.6fr 0.8fr; }
+.tables .grid.header { font-weight: 600; color: #374151; }
+.tables .card { border: 1px solid #e5e7eb; background: #fff; border-radius: 8px; padding: 10px; margin-top: 8px; }
+.tables .table { border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+.tables .line { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr; align-items: center; padding: 8px 10px; border-bottom: 1px solid #f3f4f6; }
+.tables .line:last-child { border-bottom: none; }
+.tables .cell { padding: 2px 4px; }
+.tables .cell.name { display: flex; align-items: center; gap: 6px; }
+.tables .cell.act { display: flex; gap: 6px; justify-content: flex-end; }
+.tables .empty { padding: 12px; color: #6b7280; }
+.tables .pill { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #e5e7eb; border-radius: 999px; padding: 2px 8px; font-size: 12px; }
+
+/* Gate banner */
+.tables .gate { position: sticky; bottom: 0; left: 0; right: 0; background: #ffffff; border-top: 1px solid #e5e7eb; padding: 10px; display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 16px; }
+.tables .checks { display: flex; gap: 18px; color: #374151; }
+
