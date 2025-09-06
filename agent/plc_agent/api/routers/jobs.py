@@ -126,7 +126,7 @@ def opcua_job(job_id: int, **kwargs):
                 for col, val in zip(column_names, values)
             }
 
-            # Add timestamp if 'timestamp' column exists
+            
             if 'timestamp' in target_table.c:
                 row_data['timestamp'] = datetime.utcnow()
 
@@ -136,7 +136,7 @@ def opcua_job(job_id: int, **kwargs):
     except SQLAlchemyError as db_err:
         print(f"[Job {job_id}] Database error: {db_err}")
     except HTTPException as http_err:
-        raise http_err  # Re-raise to be handled upstream
+        raise http_err  
     except Exception as err:
         print(f"[Job {job_id}] Unexpected error: {err}")
     finally:
